@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  DesignCodeiOS15
 //
-//  Created by Nick Rice on 15/02/2022.
+//  Created by Nick Rice on 22/02/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             
@@ -63,9 +63,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .preferredColorScheme(.dark)
+        HomeView()
     }
 }
