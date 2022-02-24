@@ -12,6 +12,10 @@
 		C4736E3927C42AFF00067F9E /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4736E3827C42AFF00067F9E /* TabBar.swift */; };
 		C4736E3B27C55DEA00067F9E /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4736E3A27C55DEA00067F9E /* Tab.swift */; };
 		C4736E3D27C56FF800067F9E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4736E3C27C56FF800067F9E /* HomeView.swift */; };
+		C47636FA27C7FDC100CE6350 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47636F927C7FDC100CE6350 /* FeaturedItem.swift */; };
+		C47636FC27C7FF9B00CE6350 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47636FB27C7FF9B00CE6350 /* NavigationBar.swift */; };
+		C47636FE27C804A200CE6350 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47636FD27C804A200CE6350 /* PreferenceKeys.swift */; };
+		C476370027C8080E00CE6350 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47636FF27C8080E00CE6350 /* AnimatableFontModifier.swift */; };
 		C4C8A27127BC24BD007579D4 /* DesignCodeiOS15App.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A27027BC24BD007579D4 /* DesignCodeiOS15App.swift */; };
 		C4C8A27327BC24BD007579D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C8A27227BC24BD007579D4 /* ContentView.swift */; };
 		C4C8A27527BC24BE007579D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C8A27427BC24BE007579D4 /* Assets.xcassets */; };
@@ -26,6 +30,10 @@
 		C4736E3827C42AFF00067F9E /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		C4736E3A27C55DEA00067F9E /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		C4736E3C27C56FF800067F9E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C47636F927C7FDC100CE6350 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
+		C47636FB27C7FF9B00CE6350 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		C47636FD27C804A200CE6350 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		C47636FF27C8080E00CE6350 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		C4C8A26D27BC24BD007579D4 /* DesignCodeiOS15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeiOS15.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C8A27027BC24BD007579D4 /* DesignCodeiOS15App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignCodeiOS15App.swift; sourceTree = "<group>"; };
 		C4C8A27227BC24BD007579D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,8 +57,9 @@
 		C4736E3E27C571C000067F9E /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				C4736E3827C42AFF00067F9E /* TabBar.swift */,
 				C4C8A27227BC24BD007579D4 /* ContentView.swift */,
+				C4736E3827C42AFF00067F9E /* TabBar.swift */,
+				C47636FB27C7FF9B00CE6350 /* NavigationBar.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -58,8 +67,8 @@
 		C4736E3F27C571D100067F9E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C4C8A28027BEC23F007579D4 /* AccountView.swift */,
 				C4736E3C27C56FF800067F9E /* HomeView.swift */,
+				C4C8A28027BEC23F007579D4 /* AccountView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -69,6 +78,7 @@
 			children = (
 				C4736E3627C4203F00067F9E /* BlobView.swift */,
 				C4736E3427C41A5F00067F9E /* HexagonView.swift */,
+				C47636F927C7FDC100CE6350 /* FeaturedItem.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -77,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C4736E3A27C55DEA00067F9E /* Tab.swift */,
+				C47636FD27C804A200CE6350 /* PreferenceKeys.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C4C8A27E27BEBD1E007579D4 /* Styles.swift */,
+				C47636FF27C8080E00CE6350 /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -203,10 +215,14 @@
 				C4736E3527C41A5F00067F9E /* HexagonView.swift in Sources */,
 				C4C8A27F27BEBD1E007579D4 /* Styles.swift in Sources */,
 				C4736E3B27C55DEA00067F9E /* Tab.swift in Sources */,
+				C47636FC27C7FF9B00CE6350 /* NavigationBar.swift in Sources */,
 				C4736E3727C4203F00067F9E /* BlobView.swift in Sources */,
 				C4C8A27327BC24BD007579D4 /* ContentView.swift in Sources */,
 				C4C8A27127BC24BD007579D4 /* DesignCodeiOS15App.swift in Sources */,
+				C47636FA27C7FDC100CE6350 /* FeaturedItem.swift in Sources */,
+				C47636FE27C804A200CE6350 /* PreferenceKeys.swift in Sources */,
 				C4736E3927C42AFF00067F9E /* TabBar.swift in Sources */,
+				C476370027C8080E00CE6350 /* AnimatableFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
